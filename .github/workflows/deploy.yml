@@ -14,8 +14,8 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
-        with:
-          node-version: 14
+      #        with:
+      #          node-version: latest
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -29,7 +29,7 @@ jobs:
         run: npm i -g @angular/cli
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       - name: Build
         run: ng build
