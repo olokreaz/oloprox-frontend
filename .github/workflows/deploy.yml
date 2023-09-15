@@ -25,11 +25,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install Angular/CLI
+        run: npm i -g @angular/cli
+
       - name: Install dependencies
         run: npm i
 
       - name: Build
-        run: npm run build
+        run: ng build
+      #        run: npm run build
 
       - name: Copy files
         uses: appleboy/scp-action@master
