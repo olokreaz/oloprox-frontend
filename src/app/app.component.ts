@@ -9,6 +9,7 @@ import { environment } from '../environments/environments';
 })
 export class AppComponent {
 	env = environment;
+
 	protected readonly environment = environment;
 
 	public constructor(private titleService: Title) {}
