@@ -1,20 +1,22 @@
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { environment } from '../environments/environments';
+import { Component, OnInit } from "@angular/core";
+import { environment } from "../environments/environments";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss'],
+	selector: "app-root",
+	templateUrl: "./app.component.html",
+	styleUrls: ["./app.component.scss"],
 })
-export class AppComponent {
-	env = environment;
+export class AppComponent implements OnInit {
+	readonly env = environment;
 
-	protected readonly environment = environment;
+	constructor(public translate: TranslateService) {}
 
-	public constructor(private titleService: Title) {}
+	ngOnInit() {
+		let lang = localStorage.getItem("lang")
+			? localStorage.getItem("lang")
+			: localStorage.setItem("lang", "ru");
 
-	public setTitle(newTitle: string) {
-		this.titleService.setTitle(newTitle);
+		if (lang != null) this.translate.setDefaultLang(lang);
 	}
 }

@@ -1,12 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { NotfoundComponent } from './pages/error/notfound/notfound.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/welcome', pathMatch: 'full' },
 	{
-		path: 'welcome',
+		path: '',
 		component: WelcomeComponent,
+		data: {
+			name: 'Welcome',
+		},
+	},
+	{
+		path: '**',
+		component: NotfoundComponent,
+		data: {
+			name: 'NotFound',
+		},
 	},
 ];
 

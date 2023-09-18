@@ -7,10 +7,14 @@ indent_style = tab
 indent_size = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
-tab_width = 2
+tab_width = 4
+
+[*.json]
+tab_width = 8
 
 [*.ts]
 quote_type = single
+tab_width = 8
 
 [*.md]
 max_line_length = off

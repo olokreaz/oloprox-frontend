@@ -1,0 +1,8 @@
+{
+	"404": {
+		"MESSAGE": "Looks like you've found the doorway to the great nothing",
+		"LORE1": "The content you’re looking for doesn’t exist. Either it was removed, or you mistyped the link.",
+		"LORE2": "Sorry about that! Please visit our hompage to get where you need to go.",
+		"BUTTON": "Go back to Homepage"
+	}
+}

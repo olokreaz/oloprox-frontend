@@ -3,12 +3,7 @@ module.exports = {
 	content: ["./src/**/*.{html,ts,tsx,js,jsx}"],
 	theme: {
 		extend: {
-			colors: {
-				clr: {
-					black: "#212121",
-					sky: { white: "#bce7fa" },
-				},
-			},
+			colors: {},
 			fontFamily: {
 				"Arounder": ["Arounder", "sans-serif"],
 				"Astrobia": ["Astrobia", "sans-serif"],
