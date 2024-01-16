@@ -13,7 +13,7 @@ export class NotfoundComponent {
 		private translate: TranslateService
 	) {}
 
-	public goHome() {
-		this.router.navigate(["/"]);
+	public redirect(path: string) {
+		this.router.navigateByUrl(path);
 	}
 }

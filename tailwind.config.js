@@ -3,15 +3,29 @@ module.exports = {
 	content: ["./src/**/*.{html,ts,tsx,js,jsx}"],
 	theme: {
 		extend: {
-			colors: {},
+			colors: {
+				custom: {
+					black: "#2e2e4a",
+					sky: "#bce7fd",
+					pink: { light: "#ff99c8" },
+					green: { light: "#b0e298" },
+					indigo: "#623cea",
+				},
+			},
 			fontFamily: {
 				"Arounder": ["Arounder", "sans-serif"],
 				"Astrobia": ["Astrobia", "sans-serif"],
 				"Autography": ["Autography", "sans-serif"],
 				"BobzType": ["BobzType", "sans-serif"],
-				"CapturaNowMedium": ["CapturaNowMedium", "sans-serif"],
+				"CapturaNowMedium": [
+					"CapturaNowMedium",
+					"sans-serif",
+				],
 				"Dymaxion": ["Dymaxion", "sans-serif"],
-				"ElevatePERSONAL": ["ElevatePERSONAL", "sans-serif"],
+				"ElevatePERSONAL": [
+					"ElevatePERSONAL",
+					"sans-serif",
+				],
 				"HalfRegular": ["HalfRegular", "sans-serif"],
 				"MontHeavy": ["MontHeavy", "sans-serif"],
 				"Kurale": ["Kurale", "sans-serif"],
@@ -24,5 +38,8 @@ module.exports = {
 		},
 	},
 	darkMode: "class",
-	plugins: [require("@tailwindcss/typography")],
+	plugins: [
+		require("@tailwindcss/typography"),
+		require("@tailwindcss/container-queries"),
+	],
 };

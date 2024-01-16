@@ -1,8 +1,15 @@
 {
 	"404": {
-		"MESSAGE": "Looks like you've found the doorway to the great nothing",
-		"LORE1": "The content you’re looking for doesn’t exist. Either it was removed, or you mistyped the link.",
-		"LORE2": "Sorry about that! Please visit our hompage to get where you need to go.",
-		"BUTTON": "Go back to Homepage"
+		"message": "Looks like you've found the doorway to the great nothing",
+		"lore1": "The content you’re looking for doesn’t exist. Either it was removed, or you mistyped the link.",
+		"lore2": "Sorry about that! Please visit our hompage to get where you need to go.",
+		"button": "Go back to Homepage"
+	},
+	"welcome": {
+		"title": "Welcome to club buddy",
+		"content": {
+			"title": "Build the next big thing and ship to market faster",
+			"button": "GO"
+		}
 	}
 }

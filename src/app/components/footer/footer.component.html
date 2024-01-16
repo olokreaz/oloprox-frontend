@@ -1,33 +1,29 @@
-<footer class="w-full bg-black/[87%]">
+<footer [class]="footer_class">
 	<div
 		class="container mx-auto px-4 px-4 py-12 sm:px-6 lg:px-12 xl:px-20">
 		<div class="flex flex-col items-center justify-center">
 			<div class="font-TypeWriter text-4xl text-sky-700">
-				{{ env.APP_NAME }}
+				{{ env.global.APP_NAME | lowercase }}
 			</div>
 			<div
-				class="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10">
-				<a
-					*ngFor="
-						let item of env.global
-							.header_router
-					"
-					[routerLink]="item.path"
-					class="cursor-pointer text-base leading-4 text-sky-700 hover:text-gray-500 focus:underline focus:outline-none"
-					>{{ item.name | titlecase }}
-				</a>
-			</div>
+				class="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10"></div>
 			<div class="mt-6 flex items-center">
 				<p class="text-base leading-4 text-sky-700">
-					2023
-					<span class="font-semibold">
-						{{ env.APP_NAME }}
-					</span>
+					2024-2025
+					<a
+						class="font-TypeWriter underline-offset-0 transition-all hover:text-red-600 hover:underline hover:underline-offset-8"
+						href="https://github.com/olokreaz"
+						target="_blank">
+						@olokreaz
+					</a>
 				</p>
 				<div class="ml-2 border-l border-sky-700 pl-2">
 					<p
 						class="text-base leading-4 text-sky-700">
-						Inc. All righys reserved
+						{{
+							"footer.all-rights-reversed"
+								| translate
+						}}
 					</p>
 				</div>
 			</div>
