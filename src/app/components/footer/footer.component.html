@@ -3,7 +3,7 @@
 		class="container mx-auto px-4 px-4 py-12 sm:px-6 lg:px-12 xl:px-20">
 		<div class="flex flex-col items-center justify-center">
 			<div class="font-TypeWriter text-4xl text-sky-700">
-				{{ env.global.APP_NAME | lowercase }}
+				{{ env.global.kAppName | lowercase }}
 			</div>
 			<div
 				class="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10"></div>
@@ -11,10 +11,17 @@
 				<p class="text-base leading-4 text-sky-700">
 					2024-2025
 					<a
+						[href]="
+							'https://github.com/' +
+							env.global
+								.kAppAuthorLink
+						"
 						class="font-TypeWriter underline-offset-0 transition-all hover:text-red-600 hover:underline hover:underline-offset-8"
-						href="https://github.com/olokreaz"
 						target="_blank">
-						@olokreaz
+						{{
+							env.global.kAppAuthor
+								| lowercase
+						}}
 					</a>
 				</p>
 				<div class="ml-2 border-l border-sky-700 pl-2">

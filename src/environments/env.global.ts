@@ -1,3 +1,5 @@
 export const env = {
-	APP_NAME: "oloproxx",
+	kAppName: "oloproxx",
+	kAppAuthor: "@olokreaz",
+	kAppAuthorLink: "github.com/olokreaz",
 };

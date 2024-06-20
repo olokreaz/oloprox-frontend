@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./src/**/*.{html,ts,tsx,js,jsx}"],
+	content: [
+		"./src/**/*.{html,ts,tsx,js,jsx}",
+		"./node_modules/preline/*.js",
+	],
 	theme: {
 		extend: {
 			colors: {
@@ -41,5 +44,6 @@ module.exports = {
 	plugins: [
 		require("@tailwindcss/typography"),
 		require("@tailwindcss/container-queries"),
+		require("preline/plugin"),
 	],
 };

@@ -9,7 +9,6 @@ import {BrowserModule} from "@angular/platform-browser";
 
 /* Icons import */
 import {NgIconsModule} from "@ng-icons/core";
-import {heroHome} from "@ng-icons/heroicons/outline";
 
 /* Translate import */
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
@@ -33,7 +32,8 @@ import {DisclaimerComponent} from "./pages/license/disclaimer/disclaimer.compone
 import {CoockieComponent} from "./pages/license/coockie/coockie.component";
 import {PolicyLayoutComponent} from "./pages/license/layout/PolicyLayout.component";
 import {EULAComponent} from "./pages/license/eula/eula.component";
-import {SessiaLinksComponent} from "./pages/sessia-links/sessia-links.component";
+
+//
 
 export function HttpLoaderFactory(http: HttpClient) {
 	return new TranslateHttpLoader(http);
@@ -52,7 +52,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 		CoockieComponent,
 		PolicyLayoutComponent,
 		EULAComponent,
-		SessiaLinksComponent,
 	],
 	imports: [
 		/* based */
@@ -65,7 +64,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 		NgChartsModule,
 
 		/* Icons */
-		NgIconsModule.withIcons({ heroHome }),
+		NgIconsModule.withIcons({}),
 
 		/* Translate */
 		TranslateModule.forRoot({

@@ -21,7 +21,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/oloprox",
+						"outputPath": "dist/oloproxx",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": [
@@ -37,7 +37,9 @@
 							"@angular/material/prebuilt-themes/deeppurple-amber.css",
 							"src/styles.scss"
 						],
-						"scripts": []
+						"scripts": [
+							"node_modules/preline/preline.js"
+						]
 					},
 					"configurations": {
 						"production": {

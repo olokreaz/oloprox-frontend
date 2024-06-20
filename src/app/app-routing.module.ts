@@ -10,16 +10,11 @@ import { TeamConditionsComponent } from "./pages/license/team-conditions/team-co
 import { EULAComponent } from "./pages/license/eula/eula.component";
 import { CoockieComponent } from "./pages/license/coockie/coockie.component";
 import { DisclaimerComponent } from "./pages/license/disclaimer/disclaimer.component";
-import { SessiaLinksComponent } from "./pages/sessia-links/sessia-links.component";
 
 const routes: Routes = [
 	{
 		path: "",
 		component: WelcomeComponent,
-	},
-	{
-		path: "links",
-		component: SessiaLinksComponent,
 	},
 	{
 		path: "policy",
