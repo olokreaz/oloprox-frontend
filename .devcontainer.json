@@ -1,0 +1,9 @@
+{
+  "name": "My Angular Dev Container",
+  "image": "node:latest",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [80],
+  "postCreateCommand": "npm install -g @angular/cli && npm install && ng serve --host 0.0.0.0 --port 80 --disable-host-check"
+}
